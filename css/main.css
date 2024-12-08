@@ -687,7 +687,7 @@ video {
   top: -12px;
   right: -6px;
 }
-.quote{
+.quote {
   background-image: url("../images/quote.jpg");
   background-size: cover;
   color: white;
@@ -703,14 +703,53 @@ video {
   top: 0;
   left: 0;
 }
-.quote .container{
+.quote .container {
   position: relative;
   max-height: 100%;
 }
-.quote q{
+.quote q {
   font-size: 29px;
   margin: 0;
 }
-.quote p{
+.quote p {
   margin-top: 20px;
+}
+.pricing {
+  padding: var(--main-padding) 0;
+}
+.pricing .prices{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+.pricing .prices .price{
+  margin-bottom: 25px;
+  flex-basis: 24%;
+  background-color: #FCFCFC;
+  border: 1px solid var(--main-color);
+  padding: 25px;
+}
+@media (max-width:1199px) {
+  .pricing .prices .price{
+    flex-basis: 49%;
+  }}
+@media (max-width:767px) {
+  .pricing .prices .price{
+    flex-basis: 100%;
+  }
+}
+.pricing .plan{
+  font-size: 20px;
+  position: relative;
+}
+.pricing .plan .dollar{
+  position: absolute;
+  
+}
+.pricing .plan .value{
+
+}
+.pricing .plan .value .month{
+
 }
